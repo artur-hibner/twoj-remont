@@ -42,3 +42,18 @@
 		height: auto;
 	}
 }
+
+.banner{
+	&-1{
+		background: url("../images/banner-1.jpg");
+	}
+	&-2{
+		background: url("../images/banner-2.jpg");
+	}
+	&-1, &-2{
+		height: 400px;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+	}
+}

@@ -148,6 +148,21 @@ body {
   height: auto;
 }
 
+.banner-1 {
+  background: url("../images/banner-1.jpg");
+}
+
+.banner-2 {
+  background: url("../images/banner-2.jpg");
+}
+
+.banner-1, .banner-2 {
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 
