@@ -1,1 +1,44 @@
 /* ========== MAIN SECTION ========== */
+
+.section{
+	&__heading{
+		&-2, &-3{
+			@include font-family($openSans, 5.7rem, #292929, 8rem, bold);
+		}
+		&-3{
+			font-size: 2rem;
+			line-height: 2.8rem;
+			font-weight: 300;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+.about{
+	padding: 50px 0 100px 0;
+	& .wrapper{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	&__description{
+		flex-basis: 75%;
+		padding-right: 30px;
+	}
+
+	&__paragraph{
+        @include font-family($openSans, 1.4rem, #595959, 2.5rem, 300);
+		margin-bottom: 21px;
+		&:last-child{
+			text-align: right;
+		}
+	}
+	&__picture{
+		flex-basis: 25%;
+	}
+	&__image{
+		width: 100%;
+		height: auto;
+	}
+}
