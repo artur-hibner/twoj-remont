@@ -63,6 +63,7 @@
 }
 
 .benefits{
+	padding-bottom: 20px;
 	&__items{
 		padding-top: 30px;
 		display: flex;
@@ -89,5 +90,44 @@
         @include font-family($openSans, 1.5rem, #595959, 2.4rem, 300);
         text-align: justify;
         margin-top: 20px;
+	}
+}
+
+.offer{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__heading, &__main-heading, &__list, p{
+        @include font-family($openSans, 1.4rem, #595959, 2.5rem, 300);
+	}
+	&__main{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-bottom: 30px;
+		&-heading{
+			padding-bottom: 20px;
+		}
+	}
+	&__heading{
+		margin-bottom: 20px;
+	}
+	&__list{
+		list-style-type: disc;
+		margin-left: 30px;
+		&-in{
+			list-style-type: circle;
+			margin-left: 30px;
+		}
+	}
+	p{
+		margin-top: 14px;
+	}
+	&__picture{
+		width: 100%;
+		height: auto;
+		flex-basis: 100%;
 	}
 }
