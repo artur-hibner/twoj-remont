@@ -1,7 +1,7 @@
 /* ========== MAIN SECTION ========== */
 
 .section{
-	padding: 50px 0 100px 0;
+	padding: 50px 0 30px 0;
 	&__heading{
 		&-2, &-3{
 			@include font-family($openSans, 5.7rem, #292929, 8rem, 300);
@@ -170,5 +170,77 @@
 				font-size: 1.6rem;
 				font-weight: 700;
 			}
+	}
+}
+
+.contact{
+	@include font-family($openSans, 1.4rem, #000000, 2.5rem, 300);
+	padding-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	&__address, &__form{
+		flex-basis: 50%;
+	}
+	&__address{
+		&-oneline{
+			display: inline-block;
+		}
+		dt, dd{
+			margin: 5px 0;
+		}
+		a{
+			text-decoration: none;
+			color: inherit;
+			transition: all 0.2s linear;
+			&:hover{
+				padding-bottom: 3px;
+				border-bottom: 2px solid #1e8200;
+				color: #1e8200;
+			}
+			&:focus{
+				outline: 2px solid #1e8200;
+			}
+			
+		}
+	}
+	&__form{
+		padding-top: 20px;
+		label, input, textarea{
+        	@include font-family($openSans, 1.4rem, #000000, 2.5rem, 300);
+			width: 100%;
+		}
+		input, textarea{
+			margin-top: 10px;
+			margin-bottom: 14px;
+			padding: 7px;
+			border: 2px solid #b7babe;
+			transition: all 0.2s linear;
+			&:hover, &:focus{
+				background-color: rgba(204,204,204,.6);
+    			outline: 2px solid #1e8200;
+			}
+		}
+		textarea{
+			height: 190px;
+			resize: none;
+		}
+		button{
+        	@include font-family($openSans, 1.6rem, #000000, 2.5rem, 300);
+        	letter-spacing: 1px;
+			padding: 15px 30px;
+			text-transform: uppercase;
+			color: #FFFFFF;
+			background-color: #538135;
+			border: 1px solid #1e8200;
+			margin-top: 20px;
+			transition: all 0.2s linear;
+			&:hover, &:focus{
+				background-color: rgba(204,204,204,.6);
+				color: #000000;
+    			outline: 2px solid #1e8200;
+			}
+		}
 	}
 }

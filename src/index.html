@@ -141,7 +141,7 @@
 			</div>
 				<img src="images/offer.jpg" alt="" class="offer__picture">
 			</section>
-			<section class="price wrapper">
+			<section class="section price wrapper">
 				<h2 class="section__heading-2">Cennik</h2>
 				<h3 class="section__heading-3">Cennik Remonty Włocławek i okolice</h3>
 				<table class="price__list">
@@ -308,16 +308,34 @@
 			<section class="banner-2">
 				
 			</section>
-			<section class="contact">
+			<section class="section contact wrapper">
 				<div class="contact__address">
-					<h2>Kontakt</h2>
-
-					<!-- adres -->
-
+					<h2 class="section__heading-2">Kontakt</h2>
+					<address>
+						<dl>
+							<dt class="visuallyhidden">Nazwa firmy:</dt>
+							<dd>Remonty sp. z o.o.</dd>
+							<dt class="visuallyhidden">Adres</dt>
+							<dd>ul. Zwykła 2, 01-234 Warszawa</dd>
+							<dt class="contact__address-oneline">Mail:</dt>
+							<dd class="contact__address-oneline"><a href="mailto:kontakt@twojadres.pl">kontakt@twojadres.pl</a></dd>
+							<dt class="visuallyhidden">Osoba kontaktowa</dt>
+							<dd>Jan Kowalski, kierownik projektu, tel. <a href="tel:600111222">600 111 222</a></dd>
+						</dl>
+					</address>
 				</div>
 				<div class="contact__form">
-					
-					<!-- formularz kontaktowy -->
+					<form action="">
+						<label for="name">Imię i nzwisko</label>
+						<input type="text" id="name">
+						<label for="mail">E-mail</label>
+						<input type="mail" id="mail">
+						<label for="subject">Temat</label>
+						<input type="text" id="subject">
+						<label for="message">Wiadomośc</label>
+						<textarea name="message" id="message" ></textarea>
+						<button type="submit">wyślij</button>
+					</form>
 
 				</div>
 			</section>
