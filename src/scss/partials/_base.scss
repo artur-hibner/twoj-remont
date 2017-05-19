@@ -131,3 +131,44 @@
 		flex-basis: 100%;
 	}
 }
+
+.price{
+	&__list{
+        @include font-family($openSans, 1.4rem, #000000, 2.5rem, 300);
+		border-collapse: collapse;
+		width: 100%;
+		margin-top: 50px;
+		margin-bottom: 80px;
+		thead{
+			font-size: 1.8rem;
+			font-weight: 700;
+			color: #000000;
+			background: #FFFFFF;
+		}
+		th, td{
+			padding: 8px;
+			border: 1px solid #cccccc;
+			text-align: center;
+		}
+		tbody{
+			tr:nth-child(odd){
+				background:#EBEBEB;
+				&:hover{
+					background:#4E5066;
+				}
+			}
+			tr:hover{
+				background:#4E5066;
+				color:#FFFFFF;
+				border-top: 1px solid #22262e;
+				border-bottom: 1px solid #22262e;
+			}
+		}
+		&-bold{
+				color: #595959;
+				background:#FFFFFF;
+				font-size: 1.6rem;
+				font-weight: 700;
+			}
+	}
+}

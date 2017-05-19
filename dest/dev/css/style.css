@@ -274,6 +274,53 @@ body {
   flex-basis: 100%;
 }
 
+.price__list {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #000000;
+  line-height: 2.5rem;
+  font-weight: 300;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.price__list thead {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.price__list th, .price__list td {
+  padding: 8px;
+  border: 1px solid #cccccc;
+  text-align: center;
+}
+
+.price__list tbody tr:nth-child(odd) {
+  background: #EBEBEB;
+}
+
+.price__list tbody tr:nth-child(odd):hover {
+  background: #4E5066;
+}
+
+.price__list tbody tr:hover {
+  background: #4E5066;
+  color: #FFFFFF;
+  border-top: 1px solid #22262e;
+  border-bottom: 1px solid #22262e;
+}
+
+.price__list-bold {
+  color: #595959;
+  background: #FFFFFF;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 /* ========== FOOTER SECTION ========== */
 /* ========== MEDIA QUERIES ========== */
 
