@@ -420,6 +420,47 @@ body {
 }
 
 /* ========== FOOTER SECTION ========== */
+.page-footer {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
+  color: #595959;
+  line-height: 2.5rem;
+  font-weight: 300;
+  background-color: #171717;
+  vertical-align: center;
+  text-align: center;
+}
+
+.page-footer .wrapper {
+  height: 60px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-footer a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.2s linear;
+}
+
+.page-footer a:hover {
+  padding-bottom: 3px;
+  border-bottom: 2px solid #1e8200;
+  color: #1e8200;
+}
+
+.page-footer a:focus {
+  outline: 2px solid #1e8200;
+}
+
 /* ========== MEDIA QUERIES ========== */
 
 /*# sourceMappingURL=style.css.map */
