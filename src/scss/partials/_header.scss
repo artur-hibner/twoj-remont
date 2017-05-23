@@ -31,3 +31,79 @@ body{
     width: 1px;
     white-space: nowrap;
 }
+
+.page-header{
+    height: 100vh;
+    background: url("../images/header.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    &:after{
+        content: "";
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #000000;
+        opacity: 0.5;
+        z-index: -1;
+    }
+    & .wrapper{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &__nav{
+        background-color: #262525;
+        width: 100%;
+        height: 90px;
+        align-self: flex-start;
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            flex-direction: row;
+            flex-basis: 50%;
+            justify-content: space-around;
+            a{
+                @include font-family($droidSans, 1.4rem, #999999, 2.1rem, 300);
+                text-decoration: none;
+                text-transform: uppercase;
+                transition: all 0.2s linear;
+                &:hover{
+                    padding-bottom: 3px;
+                    border-bottom: 2px solid #1e8200;
+                    color: #81d742;
+                }
+                &:focus{
+                    outline: 2px solid #1e8200;
+                }
+            }
+        }
+    }
+    &__banner{
+        width: 100%;
+        align-self: flex-start;
+        flex-basis: 100%;
+        text-align: center;
+        @include font-family($openSans, 5.2rem, #ffffff, 7.2rem, 600);
+        p{
+            font-size: 2.8rem;
+            line-height: 3.8rem;
+        }
+
+    }
+}

@@ -11,31 +11,33 @@
 
 		<link rel="stylesheet" href="css/style.css">
 	</head>
-	<body>
+	<body id="main">
 		<!--  ========== Section HEADER ========== -->
 		<header class="page-header">
 			<h1 class="visuallyhidden">Twój remont - usługi remontowe. Włocławek i okolice</h1>
 			<nav id="nav" class="page-header__nav">
+				<div class="wrapper">
 					<div class="page-header__logo">
-						<img src="images/logo.png" alt="">
+					<a href="#main"><img src="images/logo.png" alt=""></a>
+					</div>
 					<ul>
-						<li><a href="#">o firmie</a></li>
-						<li><a href="#">korzyści</a></li>
-						<li><a href="#">oferta</a></li>
-						<li><a href="#">cennik</a></li>
-						<li><a href="#">kontakt</a></li>
+						<li><a href="#about">o firmie</a></li>
+						<li><a href="#benefits">korzyści</a></li>
+						<li><a href="#offer">oferta</a></li>
+						<li><a href="#price">cennik</a></li>
+						<li><a href="#contact">kontakt</a></li>
 					</ul>
 				</div>
 			</nav>
 			<div class="page-header__banner">
-				<h2>Remonty to nasza specjalność</h2>
+				<h2 class="">Remonty to nasza specjalność</h2>
 				<p>100% zadowolonych klientów</p>
-				<button>Poznaj ofertę</button>
+				<a href="#offer"><button>Poznaj ofertę</button></a>
 			</div>
 		</header>
 		<main>
 		<!--  ========== Section MAIN ========== -->
-			<section class="section about">
+			<section id="about" class="section about">
 				<div class="wrapper">
 					<div class="about__description">
 						<h2 class="section__heading-2"><span class="section__heading-2--bold">O firmie</span></h2>
@@ -52,7 +54,7 @@
 			<section class="banner-1">
 				
 			</section>
-			<section class="section benefits wrapper">
+			<section id="benefits" class="section benefits wrapper">
 				<h2 class="section__heading-2"><span class="section__heading-2--bold">Korzyści</span> dla naszych klientów</h2>
 				<div class="benefits__items">
 					<div class="benefits__item">
@@ -87,7 +89,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="section offer wrapper">
+			<section id="offer" class="section offer wrapper">
 			<div class="offer__heading">
 				<h2 class="section__heading-2">Oferta</h2>
 				<h3 class="section__heading-3">Remonty Włocławek i okolice</h3>
@@ -141,7 +143,7 @@
 			</div>
 				<img src="images/offer.jpg" alt="" class="offer__picture">
 			</section>
-			<section class="section price wrapper">
+			<section id="price" class="section price wrapper">
 				<h2 class="section__heading-2">Cennik</h2>
 				<h3 class="section__heading-3">Cennik Remonty Włocławek i okolice</h3>
 				<table class="price__list">
@@ -308,7 +310,7 @@
 			<section class="banner-2">
 				
 			</section>
-			<section class="section contact wrapper">
+			<section id="contact" class="section contact wrapper">
 				<div class="contact__address">
 					<h2 class="section__heading-2">Kontakt</h2>
 					<address>
