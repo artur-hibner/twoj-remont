@@ -22,4 +22,4 @@ Folder: dest/prod
 ---------------
 
 ### Preview
-![picture alt](twojremont-preview.jpg "Twój remont")
+![picture alt](twojremont-preview.png "Twój remont")
